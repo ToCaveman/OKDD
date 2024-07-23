@@ -16,6 +16,7 @@
     --accent-main: #8C080C;
     --accent-pink: #FF66B3;
     --accent-aero: #42BFDD;
+    --accent-mint: #BBE6E4;
     --background: #000000;
     --background-lighter: #595959;
     --background-light: #ffffff;
@@ -46,7 +47,11 @@ body {
 .latvija {
     --bg: var(--background-lv);
     --fg: var(--foreground);
-    --accent-main: var(--foreground)
+    --accent-main: var(--foreground);
+    ::selection {
+        background: #f93636; 
+    }
+      
 }
 
 .light {
@@ -57,7 +62,10 @@ body {
 .kawaii {
     --bg: var(--background-light);
     --fg: var(--accent-pink);
-    --accent-main: var(--accent-aero)
+    --accent-main: var(--accent-aero);
+    ::selection {
+        background: var(--accent-mint);
+    }
 }
 
 img {
@@ -128,7 +136,7 @@ a {
 div.action-bar {
     display: grid;
     margin-top: 1rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 75% 1fr;
 }
 
 div.action-right {

@@ -14,9 +14,13 @@
     --foreground: #ededed;
     --foreground-dimmed: #929292;
     --accent-main: #8C080C;
-    --accent-pink: #d837e7;
+    --accent-pink: #FF66B3;
+    --accent-aero: #42BFDD;
+    --accent-mint: #BBE6E4;
     --background: #000000;
     --background-lighter: #595959;
+    --background-light: #ffffff;
+    --background-lv: #8C080C;
 
     --content-pad: 2.5rem;
     --overflow-pad: 2.5rem;
