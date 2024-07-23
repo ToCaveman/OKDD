@@ -144,8 +144,8 @@ div.action-left {
 }
 
 div.action-left img {
-    max-width: 5rem;
-    max-height: 5rem;
+    max-width: 3rem;
+    max-height: 3rem;
     margin-right: 0.3rem;
     margin-left: 0.3rem;
     transition: all 0.3s;
