@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-clip: border-box
+}
+
+/* galvenās lietas */
+
+:root {
+    font-size: 18px;
+    --foreground: #ededed;
+    --accent-main: #8C080C;
+    --accent-pink: #d837e7;
+    --background: #000000;
+    --background-lighter: #595959;
+
+    --content-pad: 2.5rem;
+    --overflow-pad: 2.5rem;
+    --max-width: 1756px;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--foreground);
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    overflow-x: hidden;
+    
+}
+
+img {
+    user-select: none;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+
+h1.landing {
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+
+h1.landing-bottom {
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+}
+
+p.lead {
+	font-size: 1.15rem;
+	font-weight: 400;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+	color: var(--foreground);
+}
+
+
+.container {
+    width: 100%;
+    height: fit-content;
+    padding: 0 var(--content-pad);   
+}
+
+.container > * {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: auto;
+}
+
+div.landing {
+    padding: var(--overflow-pad) 0;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+div.landing-content {
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+div.landing-top {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+}
+
+div.landing-bottom {
+    display: flex;
+    align-items: center;
+}
+
+div.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.nav-bar span {
+    margin: 1rem;
+}
+
+div.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.social img {
+    max-width: 5rem;
+    max-height: 5rem;
+    transition: all 0.3s;
+    border-radius: 0.5rem;
+}
+
+div.social img:hover {
+    rotate: 5deg;
+    scale: 1.05;
+}
+
+
+/*
+div.landing-text,
+div.landing-image {
+    place-self: center;
+}
+*/
+
+div.landing-top h1.landing span.nyan {
+    animation-name: kawaii;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+div.landing-top h1.landing {
+    margin: 1rem;
+}
+
+@keyframes kawaii {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+div.landing-top h1.landing:hover {
+    background: url(media/911mrlonely.gif) -11.5rem 0rem;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+div.landing-image img,
+div.landing-top h1.landing{
+    transition: all 0.5s;
+}
+
+
+
+/* krāsas */
+
+.accent-pink {
+    color: var(--accent-pink);
+}
+
+.foreground {
+    color: var(--foreground);
+}
+
+.background-lighter {
+    color: var(--background-lighter);
+}
+
+.accent-main {
+    color: var(--accent-main);
+}
+
+
