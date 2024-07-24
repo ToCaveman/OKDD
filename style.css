@@ -95,6 +95,11 @@ a {
 	color: var(--foreground);
 }
 
+a.navbar {
+    font-size: 1.5rem;
+	text-decoration: none;
+}
+
 
 .container {
     width: 100%;
@@ -139,14 +144,25 @@ div.nav-bar {
     justify-content: center;
 }
 
-div.nav-bar span {
+div.nav-bar a {
+    margin: 1rem;
+    transition: all 0.3s;
+
+}
+div.nav-bar a:hover {
+    scale: 1.2;
+    color: var(--accent-aero);
+}
+
+
+div.nav-bar a:hover {
     margin: 1rem;
 }
 
 div.social {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
 }
 
 div.social img {
@@ -154,6 +170,7 @@ div.social img {
     max-height: 5rem;
     transition: all 0.3s;
     border-radius: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 div.social img:hover {
@@ -204,17 +221,6 @@ div.landing-top h1.landing{
     transition: all 0.5s;
 }
 
-div.lit-teksts {
-    margin-top: 1rem;
-}
-
-div.lit-teksts > * {
-    margin: 1rem;
-}
-
-div.lit-teksts > p.dialogs {
-    margin: 0rem 0rem 0rem 1rem;
-}
 
 
 /* krāsas */
