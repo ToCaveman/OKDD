@@ -179,8 +179,8 @@ div.lit-teksts > p.dialogs {
 }
 
 div.back {
-    position: fixed;
-    margin: 1rem;
+    position:fixed;
+    margin-left: 1.5rem;
     width: fit-content;
     transition: all 0.5s;
 }
@@ -188,7 +188,6 @@ div.back {
 div.back a {
     font-size: 1.5rem;
     font-weight: 900;
-    padding: 0.2rem;
 }
 
 div.back:hover {
