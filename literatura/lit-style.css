@@ -178,6 +178,23 @@ div.lit-teksts > p.dialogs {
     margin: 0rem 0rem 0rem 1rem;
 }
 
+div.back {
+    position: fixed;
+    margin: 1rem;
+    width: fit-content;
+    transition: all 0.5s;
+}
+
+div.back a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.2rem;
+}
+
+div.back:hover {
+    scale: 2;
+}
+
 /* krāsas */
 
 .accent-pink {
